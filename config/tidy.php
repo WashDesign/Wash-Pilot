@@ -135,7 +135,15 @@ function wash_head_cleanup() {
 	// links for adjacent posts
 	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 
+	// WLW Link
+	remove_action( 'wp_head', 'wlwmanifest_link');
+
+	// RSD Link
+	remove_action ('wp_head', 'rsd_link');
+
 }
+
+add_action('init', 'wash_head_cleanup');
 
   // ============
   // = 2.3 Code =
