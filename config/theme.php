@@ -14,6 +14,7 @@
   * 3.2 Custom Posts Types
   * 3.3 Taxonomies
   * 3.4 Meta Boxes
+  * 3.5 Image Sizes
   *
   **/
 
@@ -34,12 +35,6 @@ function wash_theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'html5' );
-
-	set_post_thumbnail_size( 150, 150, true );
-
-	add_image_size( 'content-crop', 745, 420, true );
-	add_image_size( 'content-full', 745, 999, true );
-	add_image_size( 'hero-crop', 1000, 562, true );
 
 	if ( function_exists( "register_options_page" ) ) {
 
@@ -245,3 +240,59 @@ function wash_metabox_save( $post_id, $post ) {
 }
 
 //add_action('save_post', 'wash_metabox_save', 1, 2);
+
+  // ===================
+  // = 3.5 Image Sizes =
+  // ===================
+
+/**
+  * Customise our Theme Image Sizes
+  *
+  * @author lewis
+  *
+  */
+
+function wash_image_sizes() {
+
+	// we can set the thumbnail size
+	set_post_thumbnail_size( 150, 150, true );
+
+	// we can set the defaults
+	update_option('medium_size_w', 800);
+	update_option('medium_size_h', 600);
+	update_option('large_size_w', 1000);
+	update_option('large_size_h', 768);
+
+	// we can add custom ones
+	add_image_size( 'content-crop', 745, 420, true );
+	add_image_size( 'content-full', 745, 0, true );
+	add_image_size( 'hero-crop', 1000, 562, true );
+
+}
+
+add_action( 'init', 'wash_image_sizes' );
+
+
+/**
+  * Enable Custom Images sizes to be selected in Media Library
+  *
+  * @author lewis
+  *
+  */
+function wash_add_images_to_media( $sizes ) {
+
+	return array_merge(
+
+		$sizes,
+		array(
+
+        	'content-crop' 	=> 'Content Image - cropped',
+        	'content-full' 	=> 'Content Image',
+        	'hero-crop' 	=> 'Banner'
+
+		)
+
+	);
+
+}
+add_filter( 'image_size_names_choose', 'wash_add_images_to_media' );
