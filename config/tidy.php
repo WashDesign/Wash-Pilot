@@ -57,6 +57,23 @@ function wash_rss_version() {
 add_filter('the_generator', 'wash_rss_version');
 
 /**
+  * Remove version from footer
+  *
+  * @return - null
+  * @author - lewis
+  *
+  */
+
+function wash_footer_version() {
+
+	return '';
+
+}
+
+add_filter( 'update_footer', 'wash_footer_version', 9999);
+
+
+/**
   * Run a cleanup on versioning
   * info from css scripts
   *
