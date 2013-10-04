@@ -36,7 +36,7 @@
 			<link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
 		<![endif]-->
 
-        <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="assets/js/inc/modernizr-2.6.2.min.js"></script>
 
         <!-- more head info -->
         <?php wp_head(); ?>
