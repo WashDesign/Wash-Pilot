@@ -405,6 +405,8 @@ function wash_body_classes() {
 
 }
 
+add_filter('body_class','wash_body_classes');
+
 
   // ================
   // = 2.4 Comments =
