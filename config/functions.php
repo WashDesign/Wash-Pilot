@@ -66,6 +66,8 @@ function wash_head() {
 
 }
 
+add_action( 'wp_head'. 'wash_head' );
+
 
   // =============
   // = 5.2 MENUS =
