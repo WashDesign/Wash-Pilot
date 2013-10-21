@@ -62,28 +62,36 @@ add_action('after_setup_theme', 'wash_theme_setup');
 function defineCustomPostTypes() {
 
 	register_post_type(
-		'CPT',
+		'CPTs',
 		array(
 
-			'label' => __('CPT'),
-			'singular_label' => 'CPT',
+			'label' 				 => __('CPTs'),
 			'labels' => array(
-				'name' => 'CPT',
-				'singular_name' => 'CPT',
-				'add_new' => 'Add CPT',
-				'add_new_item' => 'Add New CPT',
-				'edit_item' => 'Edit CPT Post',
-				'new_item' => 'New CPT Post',
-				'view_item' => 'View CPTs',
-				'search_items' => 'Search CPTs',
-				'not_found' =>  'No CPTs found',
+				'singular_name' 	 => 'CPT',
+				'menu_name' 		 => 'CPT'
+				'all_items' 		 => 'CPTs'
+				'add_new' 			 => 'Add CPT',
+				'add_new_item' 		 => 'Add New CPT',
+				'edit_item' 		 => 'Edit CPT',
+				'new_item' 			 => 'New CPT',
+				'view_item' 		 => 'View CPTs',
+				'search_items' 		 => 'Search CPTs',
+				'not_found' 		 =>  'No CPTs found',
 				'not_found_in_trash' => 'No CPTs found in Trash',
-				'parent_item_colon' => '',
-				'menu_name' => 'CPT'
+				'parent_item_colon'  => ''
+
 			),
-			'description' => 'CPT',
+			'description' 			 => 'CPTs',
 			'public' => true,
-			'show_ui' => true,
+			//'exclude_from_search'  => false,
+			//'publicly_queryable'   => false,
+			//'show_ui' 			 => true,
+			//'show_in_nav_menus'	 => false,
+			'show_in_menu' 			 => true,
+			'show_in_admin_bar' 	 => true,
+			'menu_position'			 => null, // 21+ for below pages
+			'menu_icon'				 => null,
+			'hierarchical'			 => false,
 			'supports' => array(
 
 				'title',
@@ -99,12 +107,13 @@ function defineCustomPostTypes() {
 				'post-formats'
 
 			),
-			'taxonomies' => array(
+			//'taxonomies' => array(
 
-				'CT'
+			//	'CT'
 
-			),
-			'rewrite' => true
+			//),
+			'has_archive'			 => true,
+			'rewrite' 				 => true
 		)
 	);
 
