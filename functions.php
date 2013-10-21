@@ -36,6 +36,7 @@ require_once( 'config/tidy.php' );
   * 3.3 Taxonomies
   * 3.4 Meta Boxes
   * 3.5 Image Sizes
+  * 3.6 Custom Post Icons
   *
   **/
 require_once( 'config/theme.php' );
