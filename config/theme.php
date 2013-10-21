@@ -87,9 +87,16 @@ function defineCustomPostTypes() {
 			'supports' => array(
 
 				'title',
+				'editor',
+				'author',
 				'thumbnail',
 				'excerpt',
-				'editor'
+				'trackbacks',
+				'custom-fields',
+				'comments',
+				'revisions',
+				'page-attributes',
+				'post-formats'
 
 			),
 			'taxonomies' => array(
