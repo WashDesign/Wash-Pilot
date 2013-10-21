@@ -32,11 +32,10 @@ require_once( 'config/tidy.php' );
 /** 3.  Theme Config
   *
   * 3.1 Support - thumbnails, sidebars, post formats
-  * 3.2 Custom Posts Types
+  * 3.2 Custom Posts Types - register and custom icons
   * 3.3 Taxonomies
   * 3.4 Meta Boxes
-  * 3.5 Image Sizes
-  * 3.6 Custom Post Icons
+  * 3.5 Images - custom sizes and register with media library
   *
   **/
 require_once( 'config/theme.php' );

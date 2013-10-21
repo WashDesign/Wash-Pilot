@@ -11,10 +11,10 @@
 /** 3.  Theme Config
   *
   * 3.1 Support - thumbnails, sidebars, post formats
-  * 3.2 Custom Posts Types
+  * 3.2 Custom Posts Types - register and custom icons
   * 3.3 Taxonomies
   * 3.4 Meta Boxes
-  * 3.5 Image Sizes
+  * 3.5 Images - custom sizes and register with media library
   *
   **/
 
@@ -120,6 +120,40 @@ function defineCustomPostTypes() {
 }
 
 //add_action('init', 'defineCustomPostTypes');
+
+/**
+  * Customise CPT Icons
+  *
+  * @author lewis
+  *
+  */
+
+
+function wash_cpt_icons() {
+
+?>
+    <style type="text/css" media="screen">
+
+        #menu-posts-CPT .wp-menu-image {
+            background-image: url('<?php bloginfo('template_url') ?>/config/icons/ICON.png') !important;
+        }
+
+        #menu-posts-CPT .wp-menu-image {
+
+        	background-repeat: no-repeat !important;
+        	background-position: 6px -17px !important;
+        	background-size: auto !important;
+
+        }
+
+        #menu-posts-CPT:hover .wp-menu-image, #menu-posts-CPT.wp-has-current-submenu .wp-menu-image {
+            background-position: 6px 7px !important;
+        }
+    </style>
+<?php
+
+}
+//add_action( 'admin_head', 'wash_cpt_icons' );
 
 
   // =========================
@@ -257,9 +291,9 @@ function wash_metabox_save( $post_id, $post ) {
 
 //add_action('save_post', 'wash_metabox_save', 1, 2);
 
-  // ===================
-  // = 3.5 Image Sizes =
-  // ===================
+  // ==============
+  // = 3.5 Images =
+  // ==============
 
 /**
   * Customise our Theme Image Sizes
@@ -312,42 +346,3 @@ function wash_add_images_to_media( $sizes ) {
 
 }
 add_filter( 'image_size_names_choose', 'wash_add_images_to_media' );
-
-
-  // =========================
-  // = 3.6 Custom Post Icons =
-  // =========================
-
-/**
-  * Customise the CPT Icons
-  *
-  * @author lewis
-  *
-  */
-
-
-function cpt_icons() {
-
-?>
-    <style type="text/css" media="screen">
-
-        #menu-posts-CPT .wp-menu-image {
-            background-image: url('<?php bloginfo('template_url') ?>/config/icons/ICON.png') !important;
-        }
-
-        #menu-posts-CPT .wp-menu-image {
-
-        	background-repeat: no-repeat !important;
-        	background-position: 6px -17px !important;
-        	background-size: auto !important;
-
-        }
-
-        #menu-posts-CPT:hover .wp-menu-image, #menu-posts-CPT.wp-has-current-submenu .wp-menu-image {
-            background-position: 6px 7px !important;
-        }
-    </style>
-<?php
-
-}
-//add_action( 'admin_head', 'cpt_icons' );
