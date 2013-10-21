@@ -62,11 +62,12 @@ add_action('after_setup_theme', 'wash_theme_setup');
 function defineCustomPostTypes() {
 
 	register_post_type(
-		'CPTs',
-		array(
 
-			'label'                  => __('CPTs'),
+		'CPTs', array(
+
+			'label'                  => 'CPTs',
 			'labels' => array(
+
 				'singular_name'      => 'CPT',
 				'menu_name'          => 'CPTs',
 				'all_items'          => 'CPTs',
@@ -109,7 +110,7 @@ function defineCustomPostTypes() {
 			),
 			//'taxonomies' => array(
 
-			//	'CT'
+			//	'custom_tax'
 
 			//),
 			'has_archive'            => true,
@@ -135,7 +136,9 @@ function wash_cpt_icons() {
     <style type="text/css" media="screen">
 
         #menu-posts-CPT .wp-menu-image {
+
             background-image: url('<?php bloginfo('template_url') ?>/config/icons/ICON.png') !important;
+
         }
 
         #menu-posts-CPT .wp-menu-image {
@@ -147,8 +150,11 @@ function wash_cpt_icons() {
         }
 
         #menu-posts-CPT:hover .wp-menu-image, #menu-posts-CPT.wp-has-current-submenu .wp-menu-image {
+
             background-position: 6px 7px !important;
+
         }
+
     </style>
 <?php
 
@@ -172,29 +178,45 @@ function defineTaxonomies() {
 
 	register_taxonomy(
 
-		'CT',
-		array(
+		'custom_tax', array(
+
 			'CPT'
-		),
-		array(
-			'hierarchical' => true,
-			'labels' =>
-			array(
-				'name' => 'CT',
-				'singular_name' => 'CT',
-				'search_items' =>  'Search CTs',
-				'all_items' => 'All CTs',
-				'parent_item' => 'Parent CT',
-				'parent_item_colon' => 'Parent CT:',
-				'edit_item' => 'Edit CT',
-				'update_item' => 'Update CT',
-				'add_new_item' => 'Add New CT',
-				'new_item_name' => 'New CT Name',
-				'menu_name' => 'CTs'
+
+		), array(
+
+			'hierarchical'          => true,
+			'labels' => array(
+
+				'name'              => 'Custom Taxonomies',
+				'singular_name'     => 'Custom Taxonomy',
+				'menu_name'         => 'Custom Taxonomies',
+				'all_items'         => 'All Custom Taxonomies',
+				'edit_item'         => 'Edit Custom Taxonomy',
+				'view_item'         => 'View Custom Taxonomy',
+				'update_item'       => 'Update Custom Taxonomy',
+				'add_new_item'      => 'Add New Custom Taxonomy',
+				'new_item_name'     => 'New Custom Taxonomy Name',
+				'parent_item'       => 'Parent Custom Taxonomy',
+				'parent_item_colon' => 'Parent Custom Taxonomy:',
+				'search_items'      =>  'Search Custom Taxonomies',
+				'popular_items'     => 'Popular Custom Taxonomies',
+				'separate_items_with_commas' => 'Separate Custom Taxonomies with commas',
+				'add_or_remove_items'        => 'Add or remove Custom Taxonomies',
+				'choose_from_most_used'      => 'Choose from the most used Custom Taxonomies',
+				'not_found'         => 'No Custom Taxonomies found'
+
 			),
-			'show_ui' => true,
-			'query_var' => true,
-			'rewrite' => true
+			'public'                => true,
+			'show_ui'               => true,
+			'show_in_nav_menus'     => false,
+			'show_tagcloud'         => false,
+			'show_admin_column'     => true,
+			'hierarchical'          => true,
+			'update_count_callback' => '',
+			//'query_var'           => $taxonomy,
+			'rewrite'               => true,
+			'sort'                  => ''
+
 		)
 
 	);
