@@ -153,6 +153,7 @@ function wash_cpt_icons() {
 <?php
 
 }
+
 //add_action( 'admin_head', 'wash_cpt_icons' );
 
 
