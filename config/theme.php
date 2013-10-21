@@ -68,8 +68,8 @@ function defineCustomPostTypes() {
 			'label'                  => __('CPTs'),
 			'labels' => array(
 				'singular_name'      => 'CPT',
-				'menu_name'          => 'CPT'
-				'all_items'          => 'CPTs'
+				'menu_name'          => 'CPT',
+				'all_items'          => 'CPTs',
 				'add_new'            => 'Add CPT',
 				'add_new_item'       => 'Add New CPT',
 				'edit_item'          => 'Edit CPT',
