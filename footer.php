@@ -16,7 +16,7 @@
 				</nav>
 
 				<?php //*** possibly coudl do a creds/branding function ?>
-				<div class="copyright"> Company Name :&copy 2013</div>
+				<div class="copyright"> Company Name :&copy; 2013</div>
 				<div class="credits">
 					<a href="http://wash-design.co.uk/" target="_blank">A website and brand crafted by <b>Wash</b></a>
 				</div>
