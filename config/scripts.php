@@ -72,7 +72,7 @@ function wash_styles() {
 
 	if ( !is_admin() ) {
 
-		wp_register_style( 'wash-styles',   get_stylesheet_directory_uri() . '/assets/css/style.css', array(), '', 'all' );
+		wp_register_style( 'wash-styles',   get_stylesheet_directory_uri() . '/assets/css/main.css', array(), '', 'all' );
 		wp_register_style( 'wash-ie-style', get_stylesheet_directory_uri() . '/assets/css/ie.css', array(), '' );
 
 		$wp_styles->add_data( 'wash-ie-style', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
