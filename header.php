@@ -24,25 +24,16 @@
 
 		<!-- IE 10 Metro tile icon  -->
 		<meta name="msapplication-TileColor" content="#FFFFFF">
-		<meta name="msapplication-TileImage" content="assets/img/favicon-144.png">
+		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/img/favicon-144.png">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-		<link rel="apple-touch-icon-precomposed" href="assets/img/favicon-152.png">
+		<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon-152.png">
 
-        <link rel="stylesheet" href="assets/css/main.css">
-
-         <!--[if lt IE 9]>
-			<link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
-		<![endif]-->
-
-        <script src="assets/js/inc/modernizr-2.6.2.min.js"></script>
-
-        <!-- more head info -->
         <?php wp_head(); ?>
 
     </head>
     <body <?php body_class(); ?>>
-    
+
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
