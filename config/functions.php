@@ -8,18 +8,18 @@
  * Package: FlightDeck
  **/
 
-/** 5.  Functions
+/** 6.  Functions
   *
-  * 5.1 Init
-  * 5.2 Menus
-  * 5.3 Navigation
-  * 5.4 Content
-  * 5.5 Utilities
+  * 6.1 Init
+  * 6.2 Menus
+  * 6.3 Navigation
+  * 6.4 Content
+  * 6.5 Utilities
   *
   **/
 
   // ===============
-  // = 5.1 Init =
+  // = 6.1 Init =
   // ===============
 
 
@@ -70,7 +70,7 @@ add_action( 'wp_head'. 'wash_head' );
 
 
   // =============
-  // = 5.2 MENUS =
+  // = 6.2 MENUS =
   // =============
 
 /**
@@ -132,7 +132,7 @@ function wash_tree_menu() {
 
 
   // ==================
-  // = 5.3 NAVIGATION =
+  // = 6.3 NAVIGATION =
   // ==================
 
 /**
@@ -171,7 +171,7 @@ function wash_nextprev_post_nav() {
 }
 
   // ===============
-  // = 5.4 CONTENT =
+  // = 6.4 CONTENT =
   // ===============
 
 /**
@@ -187,7 +187,7 @@ function wash_breadcrumb() {
 
 
   // ================
-  // = 5.5 UTILTIES =
+  // = 6.5 UTILTIES =
   // ================
 
 /**

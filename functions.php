@@ -48,13 +48,21 @@ require_once( 'config/theme.php' );
   **/
 require_once( 'config/scripts.php' );
 
-/** 5.  Functions
+/** 5.  Plugins
   *
-  * 5.1 Init
-  * 5.2 Menus
-  * 5.3 Navigation
-  * 5.4 Content
-  * 5.5 Utilities
+  * 5.1 ACF
+  *
+  **/
+require_once( 'config/plugins.php' );
+
+
+/** 6.  Functions
+  *
+  * 6.1 Init
+  * 6.2 Menus
+  * 6.3 Navigation
+  * 6.4 Content
+  * 6.5 Utilities
   *
   **/
 require_once( 'config/functions.php' );

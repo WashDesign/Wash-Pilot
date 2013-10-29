@@ -36,13 +36,6 @@ function wash_theme_setup() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'html5' );
 
-	if ( function_exists( "register_options_page" ) ) {
-
-	    register_options_page('Site Options');
-	    register_options_page('Company Information');
-
-	}
-
 }
 
 add_action('after_setup_theme', 'wash_theme_setup');
