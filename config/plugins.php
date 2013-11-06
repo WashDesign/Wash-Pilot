@@ -20,27 +20,22 @@
   // ===========
 
 /**
-  * ACF Key Registration
+  * ACF Options Pages
   *
   * @author lewis
   *
   */
 
-function my_acf_settings( $options ) {
+function wash_acf_options_page_settings( $settings )
+{
 
-    // activate add-ons
-    $options['activation_codes']['repeater']         = 'XXXX-XXXX-XXXX-XXXX';
-    $options['activation_codes']['options_page']     = 'XXXX-XXXX-XXXX-XXXX';
-    $options['activation_codes']['flexible_content'] = 'XXXX-XXXX-XXXX-XXXX';
-    $options['activation_codes']['gallery']          = 'XXXX-XXXX-XXXX-XXXX';
+	$settings['pages'] = array('Company Information', 'Site Wide');
 
-    // setup other options (http://www.advancedcustomfields.com/docs/filters/acf_settings/)
-    $options['options_page']['pages'] = array('Company Information', 'Site Wide');
-
-    return $options;
+	return $settings;
 
 }
-add_filter('acf_settings', 'my_acf_settings');
+//add_filter('acf/options_page/settings', 'wash_acf_options_page_settings');
+
 
 
 /**
