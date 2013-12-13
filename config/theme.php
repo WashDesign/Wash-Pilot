@@ -128,23 +128,9 @@ function wash_cpt_icons() {
 ?>
     <style type="text/css" media="screen">
 
-        #menu-posts-CPT .wp-menu-image {
+        #menu-posts-CPT div.wp-menu-image:before {
 
-            background-image: url('<?php bloginfo('template_url') ?>/config/icons/ICON.png') !important;
-
-        }
-
-        #menu-posts-CPT .wp-menu-image {
-
-        	background-repeat: no-repeat !important;
-        	background-position: 6px -17px !important;
-        	background-size: auto !important;
-
-        }
-
-        #menu-posts-CPT:hover .wp-menu-image, #menu-posts-CPT.wp-has-current-submenu .wp-menu-image {
-
-            background-position: 6px 7px !important;
+            content: '\f109' !important;
 
         }
 
