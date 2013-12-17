@@ -68,7 +68,7 @@ function defineCustomPostTypes() {
 				'add_new_item'       => 'Add New CPT',
 				'edit_item'          => 'Edit CPT',
 				'new_item'           => 'New CPT',
-				'view_item'          => 'View CPTs',
+				'view_item'          => 'View CPT',
 				'search_items'       => 'Search CPTs',
 				'not_found'          => 'No CPTs found',
 				'not_found_in_trash' => 'No CPTs found in Trash',
