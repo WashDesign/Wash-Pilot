@@ -191,6 +191,30 @@ function wash_breadcrumb() {
   // ================
 
 /**
+  * Title Meta Tag
+  *
+  * @author lewis
+  *
+  */
+
+function wash_title_tag() {
+
+	global $page, $paged;
+	wp_title( '|', true, 'right' );
+	bloginfo( 'name' );
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+	{
+    	echo " | $site_description";
+    }
+	if ( $paged >= 2 || $page >= 2 )
+	{
+    	echo ' | ' . sprintf( __( 'Page %s', '_s' ), max( $paged, $page ) );
+	}
+
+}
+
+/**
   * Colors
   *
   * @author lewis
