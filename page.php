@@ -20,7 +20,7 @@
 			<div class="wrap grp">
 <?php
 
-				get_template_part( 'partials/content', 'page' );
+				get_template_part( 'partials/single' ); // use default by default
 				get_sidebar();
 
 ?>

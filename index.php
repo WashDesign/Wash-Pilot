@@ -25,11 +25,11 @@
 			if ( is_single() )
 			{
 
-				get_template_part( 'partials/content', 'single' );
+				get_template_part( 'partials/single' );
 
 			} else {
 
-				get_template_part( 'partials/content', 'loop' );
+				get_template_part( 'partials/loop' );
 
 			}
 
