@@ -30,7 +30,8 @@
 
 			the_post();
 
-			get_template_part( 'partials/content', 'search' );
+			get_template_part( 'partials/single', 'search' ); // uses partials/single.php if partials/single-search.php not found :)
+
 
 		}
 

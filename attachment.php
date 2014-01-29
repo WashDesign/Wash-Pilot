@@ -22,7 +22,8 @@
 
 			the_post();
 
-			get_template_part( 'partials/content', 'attachment' );
+			get_template_part( 'partials/single', 'attachment' ); // uses partials/single.php if partials/single-attachment.php not found :)
+
 			get_sidebar();
 
 		}

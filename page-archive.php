@@ -45,8 +45,8 @@
 
 						$customposttype->the_post();
 
-						get_template_part( 'partials/loop' ); // default
-						// get_template_part( 'partials/loop', 'post-type' ); // custom to a post type
+						get_template_part( 'partials/loop', 'post-type' ); // uses partials/single.php if partials/single-post-type.php not found :)
+
 
 					}
 

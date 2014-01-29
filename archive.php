@@ -65,7 +65,7 @@
 
 			the_post();
 
-			get_template_part( 'partials/content', 'archive' );
+			get_template_part( 'partials/loop' );
 
 		}
 

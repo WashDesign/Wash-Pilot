@@ -20,7 +20,7 @@
 			<div class="wrap grp">
 <?php
 
-				get_template_part( 'partials/single' ); // use default by default
+				get_template_part( 'partials/single', 'page' ); // uses partials/single.php if partials/single-page.php not found :)
 				get_sidebar();
 
 ?>
