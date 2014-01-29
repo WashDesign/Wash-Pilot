@@ -9,7 +9,7 @@
  **/
 
 ?>
-				<article id="post-<?php echo $customposttype->ID; ?>" class="box box-archive box-<?php echo get_post_type(); ?>s">
+				<article id="post-<?php echo get_the_ID(); ?>" class="box box-archive box-<?php echo get_post_type(); ?>s">
 
 					<header class="entry-header">
 						<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
