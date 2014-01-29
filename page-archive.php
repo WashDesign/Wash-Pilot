@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: The Package Page Template
- * Description: Displays a standard page
+ * Title: The Package Page Archive Template
+ * Description: Displays a page that hosts an archive/loop of posts
  * Author: Wash
  * Date: September 2013
  * Package: FlightDeck
@@ -35,7 +35,7 @@
 			<div class="wrap grp">
 <?php
 
-				get_template_part( 'partials/content', 'page' );
+				get_template_part( 'partials/single', 'page' );
 
 				if ( $customposttype->have_posts() ) // if we have a custom post loop - let's do it here.
 				{
@@ -43,10 +43,10 @@
 					while( $customposttype->have_posts() )
 					{
 
-						//*** check this carries through
 						$customposttype->the_post();
 
-						get_template_part( 'partials/content', 'post-type' ); // should be the post type required
+						get_template_part( 'partials/loop' ); // default
+						// get_template_part( 'partials/loop', 'post-type' ); // custom to a post type
 
 					}
 
