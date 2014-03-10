@@ -66,7 +66,7 @@ function wash_head() {
 
 }
 
-add_action( 'wp_head'. 'wash_head' );
+add_action( 'wp_head', 'wash_head' );
 
 
   // =============

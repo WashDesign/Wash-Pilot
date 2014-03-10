@@ -1,0 +1,61 @@
+// ! Headings               
+
+// ! -- Variables
+
+
+$giga-size:         6.000em;
+$mega-size:         4.500em;
+$kilo-size:         3.000em;
+
+$h1-size:           2.44em; // .alpha
+$h2-size:           1.953em; // .beta
+$h3-size:           1.563em; // .gamma
+$h4-size:           1.25em; // .delta
+$h5-size:           1em; // .epsilon
+$h6-size:           0.825em; // .zeta
+
+$milli-size:        0.64em;
+$micro-size:        0.512em;
+
+
+// ! -- Headings
+
+h1, .alpha {
+    font-size: $h1-size;
+}
+h2, .beta {
+    font-size: $h2-size;
+}
+h3, .gamma {
+    font-size: $h3-size;
+}
+h4, .delta{
+    font-size: $h4-size;
+}
+h5, .epsilon{
+    font-size: $h5-size;
+}
+h6, .zeta{
+    font-size: $h6-size;
+}
+
+// ! -- Large Font Size 
+
+.giga{
+    font-size: $giga-size;
+}
+.mega{
+    font-size: $mega-size;
+}
+.kilo{
+    font-size: $kilo-size;
+}
+
+// ! -- Small Font Size 
+
+.milli{
+    font-size: $milli-size;
+}
+.micro{
+    font-size: $micro-size;
+}

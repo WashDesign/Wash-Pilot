@@ -1,89 +1,39 @@
-/******************************************************************
+// ! CONFIG              
+@import "config/config";
+@import "config/grid";
+@import "config/mixins";
+@import "config/mq_custom";
 
-Stylesheet: Main Stylesheet
+// ! VARS
+@import "config/vars/color_scheme";
 
-******************************************************************/
+// ! BASE               
+@import "base/forms";
+@import "base/headings";
+@import "base/helpers";
+@import "base/media";
+@import "base/mq"; 
+@import "base/normalize";
 
+// ! SITE                
+@import "site/site";
+@import "site/site_header";
+@import "site/site_aside"; 
+@import "site/site_footer";
 
-//
-// IMPORTING STYLES
-//
+// ! NAV                
+@import "nav/nav";
+@import "nav/nav_primary";
+@import "nav/nav_secondary";
+@import "nav/nav_support";
 
-// import normalize
-@import "normalize";
+// ! OBJECTS                
+@import "objects/buttons";
 
-// import helpers
-@import "helpers";
+// ! MODULE                
+@import "module/mod_base";
 
-// import mixins
-@import "mixins";
-
-// import styleguide
-@import "styleguide";
-
-/*
-BASE (MOBILE) SIZE
-*/
-
-// styles in base.scss
-@import "base";
-
-/*
-LARGER MOBILE DEVICES
-*/
-@media only screen and (min-width: 30.063em) {
-
-	// styles in 481up.scss
-	@import "481up";
-
-} // end of media query
-
-/*
-TABLET & SMALLER LAPTOPS
-*/
-@media only screen and (min-width: 48.000em) {
-
-	// import grids
-	@import "grid";
-
-	// styles in 768up.scss
-	@import "768up";
-
-} // end of media query
-
-/*
-DESKTOP
-*/
-@media only screen and (min-width: 64.375em) {
-
-	// styles in 1030up.scss
-	@import "1030up";
-
-} // end of media query
-
-/*
-LARGE VIEWING SIZE
-*/
-@media only screen and (min-width: 77.500em) {
-
-	// styles in 1240up.scss
-	@import "1240up";
-
-} // end of media query
-
-
-/*
-iPHONE 5 MEDIA QUERY
-*/
-@media (device-height: 35.500em) and (-webkit-min-device-pixel-ratio: 2) {
-  
-  // iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
-  
-}
-
-/*
-PRINT STYLESHEET
-*/
+// ! PRINT                
 @media print {
-	@import "print";
+	@import "config/print";
 }
