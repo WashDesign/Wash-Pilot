@@ -12,17 +12,17 @@
 <?php
 
 	$args = array(
-
-				'post_type' => 'post',
-				'posts_per_page' => -1,
-				'status' => 'publish',
-				'orderby' => 'menu_order',
-				'order' => 'ASC',
-
-			);
+	
+		'post_type' => 'post',
+		'posts_per_page' => -1,
+		'status' => 'publish',
+		'orderby' => 'menu_order',
+		'order' => 'ASC',
+	
+	);
 
 	$customposttype = new WP_Query( $args );
-
+	
 ?>
 <?php get_header(); // site header ?>
 <?php
@@ -31,33 +31,27 @@
 
 ?>
 
-		<main class="site-main" role="main">
-			<div class="wrap grp">
 <?php
 
-				get_template_part( 'partials/single', 'page' );
-
-				if ( $customposttype->have_posts() ) // if we have a custom post loop - let's do it here.
-				{
-
-					while( $customposttype->have_posts() )
-					{
-
-						$customposttype->the_post();
-
-						get_template_part( 'partials/loop', 'post-type' ); // uses partials/single.php if partials/single-post-type.php not found :)
-
-
-					}
-
-					wp_reset_postdata();
-
-				}
-
-				get_sidebar();
+		if ( $customposttype->have_posts() ) // if we have a custom post loop - let's do it here.
+		{
+	
+			while( $customposttype->have_posts() )
+			{
+	
+				$customposttype->the_post();
+	
+				get_template_part( 'partials/loop', 'post' ); // uses partials/single.php if partials/single-post-type.php not found :)
+	
+	
+			}
+	
+			wp_reset_postdata();
+	
+		}
+	
+		get_sidebar();
 
 ?>
-			</div><!-- end wrap -->
-		</main>
 
 <?php get_footer();  // site footer ?>

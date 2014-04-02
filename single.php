@@ -10,8 +10,7 @@
 
 ?>
 <?php get_header(); // site header ?>
-		<main class="site-main" role="main">
-			<div class="wrap grp">
+
 <?php
 
 	if ( have_posts() )
@@ -34,8 +33,5 @@
 	}
 
 ?>
-
-			</div><!-- end wrap -->
-		</main>
 
 <?php get_footer();  // site footer ?>

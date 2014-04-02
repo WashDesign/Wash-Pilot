@@ -16,14 +16,12 @@
 
 ?>
 
-		<main class="site-main" role="main">
-			<div class="wrap grp">
 <?php
 
 				// frontpage content goes here
+				get_template_part( 'partials', 'single' );
 
 ?>
-		</div><!-- end wrap -->
-		</main>
+
 
 <?php get_footer();  // site footer ?>

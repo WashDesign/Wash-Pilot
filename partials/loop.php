@@ -9,13 +9,13 @@
  **/
 
 ?>
-<article id="post-<?php the_ID(); ?>" class="box box-archive box-<?php echo get_post_type(); ?>s">
+<article id="post-<?php the_ID(); ?>" class="entry <?php echo get_post_type(); ?>s">
 
-	<header class="entry-header">
-		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+	<header class="entry__header">
+		<h2 class="entry__heading"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 	</header>
 
-	<div class="entry-summary">
+	<div class="entry__excerpt">
 		<?php the_excerpt(); ?>
 	</div>
 
@@ -25,10 +25,10 @@
 	{
 
 ?>
-	<footer class="entry-meta">
+	<footer class="entry__meta">
 <?php
 
-		$categories_list = get_the_category_list( ', ' ) );
+		$categories_list = get_the_category_list( ', ');
 		if ( $categories_list )
 		{
 

@@ -8,14 +8,14 @@
  **/
 
 ?>
-				<article id="post-<?php the_ID(); ?>" class="box box-single box-<?php echo get_post_type(); ?>">
+<article id="post-<?php the_ID(); ?>" class="entry <?php echo get_post_type(); ?>s">
 
-					<header class="entry-header">
-						<h1 class="entry-title"><?php the_title(); ?></h1>
-					</header>
+	<header class="entry__header">
+		<h2 class="entry__heading"><?php the_title(); ?></h2>
+	</header>
 
-					<div class="entry-content">
-						<?php the_content(); ?>
-					</div>
+	<div class="entry__content">
+		<?php the_content(); ?>
+	</div>
 
-				</article>
+</article>

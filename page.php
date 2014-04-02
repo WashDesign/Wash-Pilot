@@ -16,15 +16,11 @@
 
 ?>
 
-		<main class="site-main" role="main">
-			<div class="wrap grp">
 <?php
 
-				get_template_part( 'partials/single', 'page' ); // uses partials/single.php if partials/single-page.php not found :)
-				get_sidebar();
+				get_template_part( 'partials', 'single' ); // uses partials/single.php if partials/single-page.php not found :)
+				/* get_sidebar(); */
 
 ?>
-			</div><!-- end wrap -->
-		</main>
 
 <?php get_footer();  // site footer ?>

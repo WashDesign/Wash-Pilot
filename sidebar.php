@@ -1,2 +1,3 @@
-<aside class="sidebar" role="complementary">
+<aside class="site-aside" role="complementary">
+
 </aside>

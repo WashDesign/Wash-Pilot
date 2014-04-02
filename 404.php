@@ -15,26 +15,21 @@
 	the_post(); // dont need a while loop as its always on result.
 
 ?>
-
-		<main class="site-main" role="main">
-			<div class="wrap grp">
-				<article id="post-<?php the_ID(); ?>" <?php post_class('grp'); ?>>
-
-					<header class="entry-header">
-						<h1 class="entry-title">404 - nothing found here</h1>
-					</header>
-
-					<div class="entry-content">
-						<?php get_search_form(); ?>
-					</div>
-
-				</article>
+		<article id="post-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
+	
+			<header class="entry__header">
+				<h1 class="entry__heading">404 - nothing found here</h1>
+			</header>
+	
+			<div class="entry__content">
+				<?php get_search_form(); ?>
+			</div>
+	
+		</article>
 <?php
 
-				get_sidebar();
+		get_sidebar();
 
 ?>
-			</div><!-- end wrap -->
-		</main>
 
 <?php get_footer();  // site footer ?>
