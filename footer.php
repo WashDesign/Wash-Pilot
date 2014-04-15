@@ -21,7 +21,7 @@
 	?>
 				
 				</div>
-				<div class="credits"><a href="http://wearebold.co.uk/" target="_blank">crafted by wearebold</a></div>
+				<div class="credits"><a href="http://wash-design.co.uk/" target="_blank">by Wash</a></div>
 	
 			</div>
 		</footer>
