@@ -1,0 +1,17 @@
+.btn {
+	font-family: $font-primary;
+	text-transform: uppercase;
+	font-size: inherit;
+	cursor: pointer;
+	display: inline-block;
+	outline: none;
+	position: relative;
+	-webkit-appearance: none;
+	@include border-top-radius(0);
+	@include border-bottom-radius(0);
+	@include border-left-radius(0);
+	@include border-right-radius(0);
+	background-color: transparent;
+	border: none;
+	@include transition(all 500ms $ease-in-out-cubic);
+}

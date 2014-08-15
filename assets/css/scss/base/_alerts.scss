@@ -1,0 +1,49 @@
+.alert {
+  padding: em(15);
+  margin-bottom: em(20);
+  border: 1px solid transparent;
+  @include border-top-radius(4px);
+  @include border-bottom-radius(4px);
+  @include border-left-radius(4px);
+  @include border-right-radius(4px);
+    
+  &--green {
+    background-color: tint($cs-alert-green, 80%);
+    border-color: tint($cs-alert-green, 70%);
+    color: $cs-alert-green;
+    
+       a {
+         color: darken($cs-alert-green, 5%);
+       }
+  }
+  
+  &--blue {
+    background-color: tint($cs-alert-blue, 80%);
+    border-color: tint($cs-alert-blue, 70%);
+    color: $cs-alert-blue;
+    
+       a {
+         color: darken($cs-alert-blue, 5%);
+       }
+  }  
+
+  &--yellow {
+    background-color: $cs-alert-yellow-l;
+    border-color: tint($cs-alert-yellow, 70%);
+    color: $cs-alert-yellow;
+    
+       a {
+         color: darken($cs-alert-yellow, 5%);
+       }
+  } 
+  
+  &--red {
+    background-color: tint($cs-alert-red, 80%);
+    border-color: tint($cs-alert-red, 70%);
+    color: $cs-alert-red;
+    
+       a {
+         color: darken($cs-alert-red, 5%);
+       }
+  } 
+}

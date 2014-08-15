@@ -1,0 +1,96 @@
+::-moz-selection {
+	background:	rgb(218,57,67);
+	color: #FFF;
+  text-shadow: none;
+}
+
+::selection {
+	background: rgb(218,57,67);
+	color: #FFF;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+textarea {
+	resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+// ! Clearfix               
+%grp,
+.grp {
+	zoom: 1;
+	
+	&:before,
+	&:after { 
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both; 
+	}
+}
+
+// ! Tools               
+
+// ! - Border Box 
+*,
+*:after,
+*:before {
+	@include box-sizing(border-box);
+}
+
+// ! - Hidden
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+// ! - Visually Hidden
+.vh {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+
+	&:active,
+	&:focus {
+	    clip: auto;
+	    height: auto;
+	    margin: 0;
+	    overflow: visible;
+	    position: static;
+	    width: auto;
+	}
+}

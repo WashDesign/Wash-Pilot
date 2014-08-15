@@ -1,4 +1,32 @@
-/*! normalize.css v1.1.1 | MIT License | git.io/normalize */
+@charset "UTF-8";
+body:before {
+  background-color: #FCF8E3;
+  border-bottom: 1px solid #FBEED5;
+  border-left: 1px solid #FBEED5;
+  color: #C09853;
+  font: small-caption;
+  padding: 3px 6px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100; }
+  @media all and (min-width: 20em) {
+    body:before {
+      content: "mobile ≥ 320px (20em)"; } }
+  @media all and (min-width: 30em) {
+    body:before {
+      content: "mobileLandscape ≥ 480px (30em)"; } }
+  @media all and (min-width: 46.25em) {
+    body:before {
+      content: "tablet ≥ 740px (46.25em)"; } }
+  @media all and (min-width: 61.25em) {
+    body:before {
+      content: "desktop ≥ 980px (61.25em)"; } }
+  @media all and (min-width: 81.25em) {
+    body:before {
+      content: "wide ≥ 1300px (81.25em)"; } }
+
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -48,26 +76,18 @@ audio:not([controls]) {
    Base
    ========================================================================== */
 /**
- * 1. Prevent system color scheme's background color being used in Firefox, IE,
- *    and Opera.
- * 2. Prevent system color scheme's text color being used in Firefox, IE, and
- *    Opera.
- * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
  *    `em` units.
- * 4. Prevent iOS text size adjust after orientation change, without disabling
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
 html {
-  background: #fff;
-  /* 1 */
-  color: #000;
-  /* 2 */
   font-size: 100%;
-  /* 3 */
-  -webkit-text-size-adjust: 100%;
-  /* 4 */
+  /* 1 */
   -ms-text-size-adjust: 100%;
-  /* 4 */ }
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
 
 /**
  * Address `font-family` inconsistency between `textarea` and other form
@@ -455,11 +475,13 @@ table {
   border-spacing: 0; }
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #da3943;
+  color: #FFF;
   text-shadow: none; }
 
 ::selection {
-  background: #b3d4fc;
+  background: #da3943;
+  color: #FFF;
   text-shadow: none; }
 
 hr {
@@ -489,15 +511,25 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
-* {
+.grp {
+  zoom: 1; }
+  .grp:before,
+  .grp:after {
+    content: "";
+    display: table; }
+  .grp:after {
+    clear: both; }
+
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.image-replacement {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden; }
+.hidden {
+  display: none !important;
+  visibility: hidden; }
 
 .vh {
   border: 0;
@@ -508,33 +540,119 @@ textarea {
   padding: 0;
   position: absolute;
   width: 1px; }
+  .vh:active, .vh:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
+
+.alert {
+  padding: 0.9375em;
+  margin-bottom: 1.25em;
+  border: 1px solid transparent;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px; }
+  .alert--green {
+    background-color: #d8e3d8;
+    border-color: #c4d5c4;
+    color: #3c763d; }
+    .alert--green a {
+      color: #336534; }
+  .alert--blue {
+    background-color: #d5e2e8;
+    border-color: #c1d4dd;
+    color: #31708f; }
+    .alert--blue a {
+      color: #2a617c; }
+  .alert--yellow {
+    background-color: #fcf8e3;
+    border-color: #dbd3c4;
+    color: #8a6d3b; }
+    .alert--yellow a {
+      color: #785f33; }
+  .alert--red {
+    background-color: #edd9d9;
+    border-color: #e5c6c6;
+    color: #a94442; }
+    .alert--red a {
+      color: #973d3b; }
 
 .btn {
-  display: block;
-  padding: 5px 20px;
-  border: 1px solid white; }
-  .btn span {
-    float: right;
-    display: block;
-    width: 20px;
-    color: white; }
-
-.site-header .btn {
-  background: red; }
-
-.btn {
-  padding: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: inherit;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  -webkit-appearance: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: transparent;
   border: none;
-  background: red; }
-  .btn span {
-    float: left;
-    width: 10px; }
+  -webkit-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1); }
 
-.site-header .btn {
-  background: green; }
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
 
-.media--right {
-  float: right; }
+  a,
+  a:visited {
+    text-decoration: underline; }
 
-.media--left {
-  float: left; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }

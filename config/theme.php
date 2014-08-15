@@ -128,6 +128,12 @@ function wash_cpt_icons() {
 ?>
     <style type="text/css" media="screen">
 
+        #menu-posts .menu-icon-post div.wp-menu-image:before {
+
+            content: '\f116' !important;
+
+        } 
+        
         #menu-posts-CPT div.wp-menu-image:before {
 
             content: '\f109' !important;

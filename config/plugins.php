@@ -386,4 +386,72 @@ if( function_exists( "register_field_group" ) ) {
 		),
 		'menu_order' => 0,
 	));
+		register_field_group(array (
+		'id' => '524ecc1170357',
+		'title' => 'Menu Type',
+		'fields' =>
+		array (
+			0 =>
+			array (
+				'key' => 'field_1',
+				'label' => 'Menu Type',
+				'name' => 'page_type',
+				'type' => 'radio',
+				'order_no' => 0,
+				'instructions' => 'Select which type of top level page this is. Your decision will effect which menu the page is added to.',
+				'required' => 1,
+				'conditional_logic' =>
+				array (
+					'status' => 0,
+					'rules' =>
+					array (
+						0 =>
+						array (
+							'field' => 'field_1',
+							'operator' => '==',
+							'value' => 'primary',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'choices' =>
+				array (
+					'primary' => 'Primary',
+					'secondary' => 'Secondary',
+					'supporting' => 'Supporting',
+				),
+				'default_value' => 'primary',
+				'layout' => 'vertical',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'page',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+				array (
+					'param' => 'page_type',
+					'operator' => '==',
+					'value' => 'top_level',
+					'order_no' => 1,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' =>
+			array (
+				'position' => 'side',
+				'layout' => 'default',
+				'hide_on_screen' =>
+				array (
+				),
+			),
+			'menu_order' => 1,
+		)
+	);
+
 }

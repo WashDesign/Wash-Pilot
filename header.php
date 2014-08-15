@@ -1,14 +1,3 @@
-<?php
-
-/*
- * Title: Package Header
- * Description: Displays all of the <head> section and everything up till <div class="site-content">
- * Author: Wash
- * Date: September 2013
- * Package: FlightDeck
- */
-
-?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -28,7 +17,17 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon-152.png">
 
-        <?php wp_head(); ?>
+    <?php wp_head(); ?>
+
+		<!-- Respond -->
+		<!--[if lt IE 9]>
+			<script src="/assets/bower_components/respond/dest/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- Selectivizr -->
+		<!--[if (gte IE 6)&(lte IE 8)]>
+			<script src="/assets/bower_components/selectivizr/selectivizr.js"></script>
+		<![endif]-->
 
     </head>
     <body <?php body_class(); ?>>

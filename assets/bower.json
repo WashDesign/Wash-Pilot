@@ -1,0 +1,28 @@
+{
+  "name": "Wash-CoPilot",
+  "version": "0.0.1",
+  "homepage": "https://github.com/WashDesign/Wash-CoPilot",
+  "authors": [
+    "Elliott Evans <ewevans1991@gmail.com>"
+  ],
+  "description": "A starting point for projects",
+  "main": "css/main.css",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sass-mq": "~2.0.1"
+  },
+  "devDependencies": {
+    "modernizer": "~2.8.2",
+    "sass-mq": "~2.0.1",
+    "flexslider": "*",
+    "selectivizr": "~1.0.2",
+    "respond": "~1.4.2"
+  }
+}

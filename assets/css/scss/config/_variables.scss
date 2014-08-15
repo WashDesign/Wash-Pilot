@@ -1,20 +1,15 @@
-// !VARIABLES
+// ! Fonts
+$font-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-secondary: Georgia, Times, "Times New Roman", serif;
 
-// !TOC
-// 1. Colors
-// 2. Font Stacks
 
-// !Color Scheme
+// ! Colors
 
-$white: rgb(255,255,255);
-$black: rgb(0,0,0);
 
-$cs-black:			rgb(30,36,37);
-$cs-black-alpha:	rgba(0,0,0, 0.7);
 
-$cs-yellow: 		rgb(253,186,49);
-
-// !Fonts
-
-$serif:             "lexia", serif;
-$sans-serif:        "Helvetica Neue", sans-serif;
+// ! - Alert
+$cs-alert-green: rgb(60,118,61);
+$cs-alert-blue: rgb(49,112,143);
+$cs-alert-yellow: rgb(138,109,59);
+$cs-alert-yellow-l: rgb(252,248,227);
+$cs-alert-red: rgb(169,68,66);
