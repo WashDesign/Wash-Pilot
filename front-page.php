@@ -4,7 +4,6 @@
  * Title: The Package Front Page
  * Description: Displays the front page
  * Author: Wash
- * Date: September 2013
  * Package: FlightDeck
  **/
 

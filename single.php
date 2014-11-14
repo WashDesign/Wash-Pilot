@@ -2,9 +2,8 @@
 
 /**
  * Title: Single Page Template
- * Description: DIspla
+ * Description: A page template for teh default posts and custom post types.
  * Author: Wash
- * Date: September 2013
  * Package: FlightDeck
  **/
 
@@ -22,6 +21,7 @@
 			the_post();
 
 			get_template_part( 'partials/single' );
+			
 			get_sidebar();
 
 		}

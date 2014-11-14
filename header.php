@@ -4,11 +4,10 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title><?php wp_title( '|', true, 'right' ); ?></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- IE 10 Metro tile icon  -->
 		<meta name="msapplication-TileColor" content="#FFFFFF">
@@ -30,19 +29,19 @@
 		<![endif]-->
 
     </head>
-    <body <?php body_class(); ?>>
+    <body <?php body_class('site'); ?>>
 
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 
-		<header class="site-header" role="banner">
+		<header class="site__header" role="banner">
 			<div class="constrain grp">
 	
-				<div class="site-brand" itemscope itemtype="http://schema.org/Organization">
-					<a class="site-brand__link" itemprop="url" href="<?php echo home_url(); ?>" rel="home">
-						<h1 class="site-brand__heading vh" itemprop="name"><?php bloginfo( 'name'); ?></h1>
-						<img class="site-brand__media" itemprop="logo" src="http://placehold.it/190x83" alt="<?php bloginfo( 'name'); ?>">
+				<div class="brand" itemscope itemtype="http://schema.org/Organization">
+					<a class="brand__link" itemprop="url" href="<?php echo home_url(); ?>" rel="home">
+						<h1 class="brand__heading vh" itemprop="name"><?php bloginfo( 'name'); ?></h1>
+						<img class="brand__media" itemprop="logo" src="http://placehold.it/190x83" alt="<?php bloginfo( 'name'); ?>">
 					</a>
 				</div>
 	
@@ -100,10 +99,8 @@
 ?>
 						</ul>
 					</nav>
-	
-	
 			</div>
 		</header>
 	
-		<main class="site-main">
-			<div class="site-content constrain grp">
+		<main class="site__main">
+			<div class="site__content constrain grp">

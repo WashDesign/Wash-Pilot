@@ -4,7 +4,6 @@
  * Title: Archive Template
  * Description: The template for displaying archive pages for postypes, taxonomies, authors and dates
  * Author: Wash
- * Date: September 2013
  * Package: FlightDeck
  **/
 

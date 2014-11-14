@@ -10,6 +10,7 @@
 
 ?>
 <?php get_header(); // site header ?>
+
 <?php
 
 	the_post(); // dont need a while loop as its always on result.
@@ -19,7 +20,7 @@
 <?php
 
 				get_template_part( 'partials', 'single' ); // uses partials/single.php if partials/single-page.php not found :)
-				/* get_sidebar(); */
+				//get_sidebar();
 
 ?>
 

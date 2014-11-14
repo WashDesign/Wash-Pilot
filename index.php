@@ -2,9 +2,8 @@
 
 /**
  * Title: Default Index Template
- * Description: The most generic template shoudl ideally function as a catch-all (or archive).
+ * Description: The most generic template should ideally function as a catch-all (or archive).
  * Author: Wash
- * Date: September 2013
  * Package: FlightDeck
  **/
 

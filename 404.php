@@ -4,12 +4,12 @@
  * Title: The Package 404 Page
  * Description: Displays a 404 page with search form
  * Author: Wash
- * Date: September 2013
  * Package: FlightDeck
  **/
 
 ?>
 <?php get_header(); // site header ?>
+
 <?php
 
 	the_post(); // dont need a while loop as its always on result.

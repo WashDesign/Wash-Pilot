@@ -4,7 +4,6 @@
  * Title: The Package Page Archive Template
  * Description: Displays a page that hosts an archive/loop of posts
  * Author: Wash
- * Date: September 2013
  * Package: FlightDeck
  **/
 
@@ -41,7 +40,7 @@
 	
 				$customposttype->the_post();
 	
-				get_template_part( 'partials/loop', 'post' ); // uses partials/single.php if partials/single-post-type.php not found :)
+				get_template_part( 'partials/loop', 'post' ); // uses partials/loop.php if partials/loop-post-type.php not found :)
 	
 	
 			}

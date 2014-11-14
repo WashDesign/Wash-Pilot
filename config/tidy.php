@@ -4,7 +4,6 @@
  * Title: Tidy Up File
  * Description: Includes all the functions for keeping WP tidy and secure
  * Author: Wash
- * Date: September 2013
  * Package: FlightDeck
  **/
 

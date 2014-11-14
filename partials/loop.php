@@ -4,7 +4,6 @@
  * Title: Content Loop Template Default
  * Description: The standard content for a loop. Displays the summary/excerpt.
  * Author: Wash
- * Date: September 2013
  * Package: FlightDeck
  **/
 

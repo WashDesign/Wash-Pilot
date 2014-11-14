@@ -243,4 +243,4 @@ function wash_tinymce_classes( $init ) {
 
 }
 
-add_filter('tiny_mce_before_init', 'wash_tinymce_classes');
+//add_filter('tiny_mce_before_init', 'wash_tinymce_classes');

@@ -3,7 +3,6 @@
 /**
  * Title: Page Content Template
  * Author: Wash
- * Date: September 2013
  * Package: FlightDeck
  **/
 

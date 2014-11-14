@@ -1,3 +1,3 @@
-<aside class="site-aside" role="complementary">
+<aside class="site__aside" role="complementary">
 
 </aside>
